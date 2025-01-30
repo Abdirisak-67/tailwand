@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="ss.js"></script>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <title>seller</title>
+  <div class="w-full border border-gray-300 shadow p-4 px-10">
+    Existing Seller? Explore our product recommendations with Dhamaka Selection
+  </div>
+  <div class="bg[#ffffff] min-h-screen shadow ">
+   <!--  -->
+   <header class="bg-[#ffffff]-500 text-white w-full shadow">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="index.html">
+          <img src="images/flipcrt-logo.svg" alt="Flipkart Logo" class="w-24 sm:w-32">
+        </a>
+      </div>
+  
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:text-gray-200 text-black"">Sell Online</a></li>
+          <li><a href="#" class="hover:text-gray-200 text-black">Fees & Commission</a></li>
+          <li><a href="#" class="hover:text-gray-200 text-black"">Grow</a></li>
+          <li><a href="#" class="hover:text-gray-200 text-black"">Learn</a></li>
+          <li><a href="#" class="hover:text-gray-200 text-black"">Shopsy</a></li>
+        </ul>
+      </div>
+  
+      <!-- Login Button -->
+      <div class="hidden md:block">
+        <a href="login.html">       
+          <button class="text-lg text-black cursor-pointer">Login</button>
+        </a>
+        <button class="bg-[#ffcd00] py-3 px-8 text-black text-lg hover:bg-[#ffcd00]/90 cursor-pointer ">Start Selling</button>
+      </div>
+  
+      <!-- Mobile Toggle Button -->
+      <div class="md:hidden">
+        <button id="mobileMenuToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Mobile Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden bg-blue-500">
+      <ul class="p-4 space-y-4">
+        <li><a href="#" class="text-white hover:text-gray-200">Sell Online</a></li>
+        <li><a href="#" class="text-white hover:text-gray-200">Fees & Commission</a></li>
+        <li><a href="#" class="text-white hover:text-gray-200">Grow</a></li>
+        <li><a href="#" class="text-white hover:text-gray-200">Learn</a></li>
+        <li><a href="#" class="text-white hover:text-gray-200">Shopsy</a></li>
+        <li><button class="tex-lg">Login</button></li>
+      </ul>
+    </div>
+  </header>
+    
+  
+    
+    <section class="container  py-16 ">
+      <!--  -->
+      <div class="text-center mb-8 flex flex-col lg:flex-row justify-around items-center">
+        <!-- Text Content -->
+        <div class="flex flex-col text-center lg:text-left">
+          <h2 class="text-4xl font-bold mb-4 mt-10">Sell Online with Flipkart</h2>
+          <p class="text-lg text-gray-600">Reach 45+ crore Flipkart customers</p>
+        </div>
+        
+        <!-- Image -->
+        <div class="mt-6 lg:mt-0">
+          <img 
+            class="border shadow rounded-md max-w-full lg:max-w-xs " 
+            src="images/E-commerce for Everyone_ Building an Affordable Online Store with WooCommerce.jfif" 
+            alt="E-commerce for Everyone">
+        </div>
+      </div>
+      
+      </div>
+      <!--  -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 m-10">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fa-solid fa-users-rectangle text-2xl bg-blue-600 py-6 px-6 ml-10 text-white rounded-full block"></i>
+          <h3 class="text-xl font-semibold mb-2">45+ Crore Customers</h3>
+          <p>Reach a massive customer base across India.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fa-solid fa-money-check-dollar text-2xl bg-blue-600 py-6 px-6 ml-10 text-white rounded-full block"></i>
+          <h3 class="text-xl font-semibold mb-2">7 Days Secure Payments</h3>
+          <p>Get paid securely and on time every week.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fa-solid fa-trowel-bricks text-2xl bg-blue-600 py-6 px-6 ml-10 text-white rounded-full block"></i>
+          <h3 class="text-xl font-semibold mb-2">Low Cost of Doing Business</h3>
+          <p>Enjoy competitive commission rates and minimal listing fees.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fa-solid fa-phone-volume text-2xl bg-blue-600 py-6 px-6 ml-10 text-white rounded-full block"></i>
+          <h3 class="text-xl font-semibold mb-2">One-Click Seller Support</h3>
+          <p>Access instant support and resources 24/7.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f2faff] py-10 flex justify-center items-center">
+      <div class="container w-full max-w-4xl flex flex-col lg:flex-row justify-center items-center gap-8 p-6 shadow-lg border border-gray-300 rounded-lg">
+        <!-- Text Content -->
+        <div class="flex flex-col max-w-lg text-center lg:text-left">
+          <p class="text-3xl font-bold text-gray-800 mt-3">List Groups</p>
+          <div class="w-12 h-2 bg-blue-500 rounded-full mt-3 mx-auto lg:mx-0"></div>
+          <p class="text-md text-gray-600 mt-4 leading-relaxed">
+            What is a listing? A listing refers to the process of registering your product on the Flipkart platform, 
+            making it visible to customers, and enabling them to view and purchase your product. It involves creating 
+            a detailed product page that includes essential information such as product title, description, images, 
+            pricing, and other relevant details. A well-crafted listing helps attract potential customers and facilitates 
+            the sale of your product on Flipkart.
+          </p>
+        </div>
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img class="w-full max-w-sm lg:max-w-md mt-6 lg:mt-5" src="images/list-grup.png" alt="List Group Illustration">
+        </div>
+      </div>
+    </section>
+    
+      
+<!--  -->
+<footer class="bg-[#353536] text-white py-10 text-sm mt-20">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    <div>
+      <h3 class="font-semibold mb-3">ABOUT</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Contact Us</a></li>
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Flipkart Stories</a></li>
+        <li><a href="#" class="hover:underline">Press</a></li>
+        <li><a href="#" class="hover:underline">Corporate Information</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-3">GROUP COMPANIES</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Myntra</a></li>
+        <li><a href="#" class="hover:underline">Cleartrip</a></li>
+        <li><a href="#" class="hover:underline">Shopsy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-3">HELP</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Payments</a></li>
+        <li><a href="#" class="hover:underline">Shipping</a></li>
+        <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+        <li><a href="#" class="hover:underline">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-3">CONSUMER POLICY</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+        <li><a href="#" class="hover:underline">Terms Of Use</a></li>
+        <li><a href="#" class="hover:underline">Security</a></li>
+        <li><a href="#" class="hover:underline">Privacy</a></li>
+        <li><a href="#" class="hover:underline">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="col-span-2 md:col-span-1">
+      <h3 class="font-semibold mb-3">Mail Us:</h3>
+      <p>Flipkart Internet Private Limited,<br> Buildings Alyssa, Begonia &<br> Clove Embassy Tech Village,<br> Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103, Karnataka, India <br> Telephone: <span class="text-blue-500 font-semibold"> +252619078926</span>
+      </p>
+    </div>
+  </div>
+  <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 flex flex-col md:flex-row justify-center md:justify-between max-w-7xl mx-auto px-6">
+    <div class="space-x-6">
+      <a href="#" class="hover:underline">Become a Seller</a>
+      <a href="#" class="hover:underline">Advertise</a>
+      <a href="#" class="hover:underline">Gift Cards</a>
+      <a href="#" class="hover:underline">Help Center</a>
+    </div>
+    <p class="mt-4 md:mt-0">&copy; 2007-2025 Flipkart.com</p>
+  </div>
+</footer>
+  <script>
+
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  mobileMenuToggle.addEventListener('click', () => {
+    // Toggle visibility by adding or removing 'hidden'
+    mobileMenu.classList.toggle('hidden');
+  });
+  </script>
+      
+  
+  </body>
+</html>

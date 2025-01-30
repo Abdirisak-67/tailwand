@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="ss.js"></script>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <title>login</title>
+  <body>
+    <header class="bg-blue-400 shadow">
+      <div class="flex items-center justify-between px-6 py-2">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html">
+            <img src="images/flipcrt-logo.svg" alt="Flipkart Logo" class="w-24 sm:w-32">
+          </a>
+        </div>
+        <!-- Search Bar -->
+        <div class="flex-grow mx-6 hidden sm:block">
+          <input
+            type="text"
+            placeholder="Search for Products, Brands and More"
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 text-lg"
+          />
+        </div>
+    
+        <!-- Icons and Links -->
+        <div class="hidden sm:flex items-center space-x-6 gap-5">
+          <div class="flex items-center gap-2">
+           <a href="login.html"> <i class="fa-regular fa-circle-user text-gray-100"></i></a>
+            <a href="login.html">  <button class="text-gray-100 hover:text-blue-600">Login</button>
+            </a>
+          </div>
+          <div class="flex items-center space-x-1 cursor-pointer gap-2">
+            <a href="cart.html">   <i class="fa-solid fa-cart-shopping text-gray-100"></i>
+            </a>
+            <a href="cart.html"><span class="text-gray-100 ">Cart</span>
+            </a>
+          </div>
+          <div class="flex items-center gap-2">
+            <a href="becomseller.html">  <i class="fa-brands fa-sellsy text-gray-100"></i>
+            </a>
+            <a href="becomseller.html" class="text-gray-100 hover:text-blue-600">Become a Seller</a>
+          </div>
+          <button class="text-gray-100">
+            <i class="fa-solid fa-ellipsis-vertical text-gray-100"></i>
+          </button>
+        </div>
+    
+        <!-- Toggle Button -->
+        <button
+          id="menu-toggle"
+          class="text-gray-600 sm:hidden focus:outline-none cursor-pointer hover:text-blue-700"
+        >
+          <i class="fa-solid fa-bars text-lg font-bold px-4"></i>
+        </button>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="hidden flex flex-col bg-gray-100 space-y-4 px-6 py-4 sm:hidden"
+      >
+        <input
+          type="text"
+          placeholder="Search for Products, Brands and More"
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
+        />
+        <a href="login.html" class="text-gray-600 hover:text-blue-600 flex items-center gap-2">
+        <a href="login.html">  <i class="fa-regular fa-circle-user"></i> Login</a>
+        </a>
+        <a href="cart.html" class="text-gray-600 hover:text-blue-600 flex items-center gap-2">
+        <a href="cart.html">  <i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        </a>
+        <a href="becomseller.html" class="text-gray-600 hover:text-blue-600 flex items-center gap-2">
+         <a href="becomseller.html"> <i class="fa-brands fa-sellsy"></i> Become a Seller</a>
+        </a>
+        <button class="text-gray-600 flex items-center gap-2">
+          <i class="fa-solid fa-ellipsis-vertical"></i> More
+        </button>
+      </nav>
+    </header>
+    
+    <!-- hero -->
+    <div class="bg-white text-black py-2 overflow-x-auto whitespace-nowrap">
+      <div class="flex gap-6 justify-start px-4 md:justify-center lg:justify-between">
+        <a href="#" class="font-medium hover:underline md:text-sm lg:text-base">Electronics</a>
+        <a href="#" class="font-medium hover:underline md:text-sm lg:text-base">TVs & Appliances</a>
+        <a href="#" class="font-medium hover:underline md:text-sm lg:text-base">Men</a>
+        <a href="#" class="font-medium hover:underline md:text-sm lg:text-base">Women</a>
+        <a href="#" class="font-medium hover:underline md:text-sm lg:text-base">Baby & Kids</a>
+        <a href="#" class="font-medium hover:underline md:text-sm lg:text-base">Home & Furniture</a>
+        <a href="#" class="font-medium hover:underline md:text-sm lg:text-base">Sports, Books & More</a>
+        <a href="#" class="font-medium hover:underline md:text-sm lg:text-base">Flights</a>
+        <a href="#" class="font-medium hover:underline md:text-sm lg:text-base">Offer Zone</a>
+      </div>
+    </div>
+   <section>
+    <div class="container flex justify-center mt-20">
+      <!--  -->
+      <div class="bg-[#2874f0] w-62 h-100 space-y-5 rounded-sm">
+        <h1 class="text-white ml-10 text-2xl">Login</h1>
+        <p class="text-gray-300 ml-10 text-sm">
+          Get access to your Orders,<br> Wishlist and Recommendations
+        </p>
+        <img class="my-40 ml-8" src="images/login.png" alt="">
+      </div>
+      <!--  -->
+      <div class="bg-white-600 border border-gray-300 w-100 py-5 px-3 rounded-sm"> 
+    
+          <input type="text" id="name" class=" w-full px-3 py-2 border-b-2 border-gray-400 text-sm text-gray-100 focus:outline-none focus:ring-0 focus:border-blue-500 transition duration-300 placeholder:text-gray-500" placeholder="Enter email / mobile number">
+        
+          <p class="text-sm text-gray-500 mt-7">
+            By continuing, you  to  
+            <a href="#" class="text-blue-500 hover:underline">Terms of Use</a> and 
+            <a href="#" class="text-blue-500 hover:underline">Privacy Policy</a>.
+          </p>
+          <button class="bg-[#fb641b] text-lg text-white w-full rounded-md py-2 mt-3">Request OTP</button>
+          <p class="text-blue-500 text-sm mt-48 text-center cursor-pointer">New to Flipkart? Create an account</p>
+      </div>
+    </div>
+   </section>
+<!--  -->
+   
+<!--  -->
+<footer class="bg-[#353536] text-white py-10 text-sm mt-20">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    <div>
+      <h3 class="font-semibold mb-3">ABOUT</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Contact Us</a></li>
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Flipkart Stories</a></li>
+        <li><a href="#" class="hover:underline">Press</a></li>
+        <li><a href="#" class="hover:underline">Corporate Information</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-3">GROUP COMPANIES</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Myntra</a></li>
+        <li><a href="#" class="hover:underline">Cleartrip</a></li>
+        <li><a href="#" class="hover:underline">Shopsy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-3">HELP</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Payments</a></li>
+        <li><a href="#" class="hover:underline">Shipping</a></li>
+        <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+        <li><a href="#" class="hover:underline">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-3">CONSUMER POLICY</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+        <li><a href="#" class="hover:underline">Terms Of Use</a></li>
+        <li><a href="#" class="hover:underline">Security</a></li>
+        <li><a href="#" class="hover:underline">Privacy</a></li>
+        <li><a href="#" class="hover:underline">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="col-span-2 md:col-span-1">
+      <h3 class="font-semibold mb-3">Mail Us:</h3>
+      <p>Flipkart Internet Private Limited,<br> Buildings Alyssa, Begonia &<br> Clove Embassy Tech Village,<br> Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103, Karnataka, India <br> Telephone: <span class="text-blue-500 font-semibold"> +252619078926</span>
+      </p>
+    </div>
+  </div>
+  <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 flex flex-col md:flex-row justify-center md:justify-between max-w-7xl mx-auto px-6">
+    <div class="space-x-6">
+      <a href="#" class="hover:underline">Become a Seller</a>
+      <a href="#" class="hover:underline">Advertise</a>
+      <a href="#" class="hover:underline">Gift Cards</a>
+      <a href="#" class="hover:underline">Help Center</a>
+    </div>
+    <p class="mt-4 md:mt-0">&copy; 2007-2025 Flipkart.com</p>
+  </div>
+</footer>
+    <script>
+      // JavaScript for toggling the mobile menu
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+    
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="ss.js"></script>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <title>cart.com</title>
+  <body class="bg-[#f1f3f6] ">
+    
+    <header class="bg-blue-500 shadow">
+      <div class="flex items-center justify-between px-6 py-2 mx-0">
+        <!--  -->
+        <div class="flex items-center">
+          <a href="index.html">
+            <img src="images/flipcrt-logo.svg" alt="Flipkart Logo" class="w-24 sm:w-32">
+          </a>
+        </div>
+    
+        <div class="flex-grow mx-6 hidden sm:flex">
+          <input
+            type="text"
+            placeholder="Search for Products, Brands and More"
+            class="w-md border border-gray-300 px-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black-500 bg-gray-100 text-lg"
+          />
+        </div>
+    <a href="login.html">
+      <button class="bg-white py-1 px-10 text-md text-blue-600 cursor-pointer sm:inline-block hidden mr-30 cursor-pointer">login</button></a>
+    
+        <button class="block sm:hidden" id="toggleButton">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    
+      <div id="mobileMenu" class="hidden sm:hidden">
+        <div class="bg-blue-500 p-4">
+          <input
+            type="text"
+            placeholder="Search for Products, Brands and More"
+            class="w-full border border-gray-300 px-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black-500 bg-gray-100 text-lg"
+          />
+        </div>
+        <button class="bg-white py-1 px-10 text-md text-blue-600 cursor-pointer block w-full text-center">login</button>
+      </div>
+    </header>
+
+    <!-- hero -->
+    <div class="bg-gray-100 p-5 flex items-center justify-center ">
+      <div class="bg-white rounded-lg shadow-md py-5 px-100 ">
+        <div class="text-center mb-4 ">
+          <img src="images/cart.png" alt="Shopping Cart Illustration" class="w-54 items-center"> 
+        </div>
+        <h2 class="text-lg font-semibold mb-2">Missing Cart Items?</h2>
+        <p class="text-sm text-gray-500 mb-6">Login to see the items you added previously.</p>
+        <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-18 rounded-sm ml-3 cursor-pointer">Login</button>
+      </div>
+    </div>
+
+ <footer class=" border-t-1 border-gray-400 ">
+  <div class="container bg[#f1f3f6]">
+    <div class="flex justify-between p-4">
+      <!--  -->
+     <div>
+      <p class="text-sm text-semibold text-gray-500">
+        Polices:  Policy | Terms | of useSecurity | Privacy <span class="ml-4">© 2007-2025 Flipkart.com</span>
+      </p>
+      <P></P>
+     </div>
+     <!--  -->
+      <!--  -->
+    <div class="text-gray-500 text-sm">
+      Need help? Visit the <span class="text-blue-600">Help</span> <span class="text-blue-600">Center</span> or <span class="text-blue-600"> Contact Us</span>
+    </div>
+    </div>
+   
+  </div>
+ </footer>
+<script>
+  const toggleButton = document.getElementById('toggleButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  toggleButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+  });
+</script>
+    </script>
+  </body>
+</html>

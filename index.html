@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="ss.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7y/IrH85v/b4Qzn1Rcrij0GqwgP/pbNMiwDZlaus0+6ZvwTNks/7pQhvpVNxeIYd0/EX0wRB4KZ7k/LN/" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <title>Flibkart.com</title>
+  <body>
+    <header class="bg-white shadow">
+      <div class="flex items-center justify-between px-6 py-2">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html">
+            <img src="images/flipcrt-logo.svg" alt="Flipkart Logo" class="w-24 sm:w-32">
+          </a>
+        </div>
+    
+        <!-- Search Bar -->
+        <div class="flex-grow mx-6 hidden sm:block">
+          <input
+            type="text"
+            placeholder="Search for Products, Brands and More"
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+    
+        <!-- Icons and Links -->
+        <div class="hidden sm:flex items-center space-x-6 gap-5">
+
+          <div class="flex items-center gap-2">
+            <a href="login.html"> <i class="fa-regular fa-circle-user text-black cursor-pointer"></i>
+            </a>
+            <a href="login.html"> <button class=" text-black hover:text-blue-600 cursor-pointer">Login</button>
+            </a>
+          </div>
+         
+          <div class="flex items-center space-x-1 cursor-pointer gap-2">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+            </a>
+            <a href="cart.html">
+              <span class="text-gray-600 cursor-pointer">Cart</span>
+
+            </a>
+          </div>
+          <div class="flex items-center gap-2">
+            <a href="becomseller.html"> <i class="fa-brands fa-sellsy"></i>
+            </a>
+            <a href="becomseller.html" class="text-gray-600 hover:text-blue-600">Become a Seller</a>
+          </div>
+          <button class="text-gray-600">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+    
+        <!-- Toggle Button -->
+        <button
+          id="menu-toggle"
+          class="text-gray-600 sm:hidden focus:outline-none cursor-pointer hover:text-blue-700"
+        >
+          <i class="fa-solid fa-bars text-lg font-bold px-4"></i>
+        </button>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="hidden flex flex-col bg-gray-100 space-y-4 px-6 py-4 sm:hidden"
+      >
+        <input
+          type="text"
+          placeholder="Search for Products, Brands and More"
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
+        />
+        <a href="login.html" target="_blank" class="text-gray-600 hover:text-blue-600 flex items-center gap-2">
+          <i class="fa-regular fa-circle-user cursor-pointer"></i> Login
+      </a>
+      <a href="cart.html" class="text-gray-600 hover:text-blue-600 flex items-center gap-2">
+        <a href="cart.html">        <i class="fas fa-cart-shopping"></i> 
+        </a>
+        Cart
+    </a>
+    <a href="becomseller.html" class="text-gray-600 hover:text-blue-600 flex items-center gap-2">
+      <a href="becomseller.html"> <i class="fa-brands fa-sellsy"></i>
+      </a>
+  Become seller
+  </a>
+        <button class="text-gray-600 flex items-center gap-2">
+          <i class="fa-solid fa-ellipsis-vertical"></i> More
+        </button>
+      </nav>
+    </header>
+    
+    <section>
+      <div class="bg-gray-100 py-6 px-4">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          <!-- Crocery -->
+          <div class="text-center">
+            <img src="images/crocery.webp" alt="Crocery" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">Crocery</p>
+          </div>
+          <!-- Mobiles -->
+          <div class="text-center">
+            <img src="images/mobiles.webp" alt="Mobiles" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">Mobiles</p>
+          </div>
+          <!-- Fashion -->
+          <div class="text-center">
+            <img src="images/appliance.webp" alt="Fashion" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">Fashion</p>
+          </div>
+          <!-- Electronics -->
+          <div class="text-center">
+            <img src="images/flight.webp" alt="Electronics" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">Electronics</p>
+          </div>
+          <!-- Furniture -->
+          <div class="text-center">
+            <img src="images/scroll 1.png" alt="Furniture" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">Furniture</p>
+          </div>
+          <!-- Appliances -->
+          <div class="text-center">
+            <img src="images/scroll2.png" alt="Appliances" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">Appliances</p>
+          </div>
+          <!-- Flight Booking -->
+          <div class="text-center">
+            <img src="images/scroll 3.png" alt="Flight Booking" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">Flight Booking</p>
+          </div>
+          <!-- Beauty Toys -->
+          <div class="text-center">
+            <img src="images/scrool4.png" alt="Beauty Toys" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">Beauty Toys</p>
+          </div>
+          <div class="text-center">
+            <img src="images/appliance.webp" alt="" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">shopping</p>
+          </div>
+          <!-- Two Wheelers -->
+          <div class="text-center">
+            <img src="images/flight.webp" alt="Two Wheelers" class="w-full h-32 object-cover rounded-lg shadow-md">
+            <p class="text-[#0F112B] font-bold text-sm mt-3">Two Wheelers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!--  -->
+<section>
+  <div class="flex flex-col md:flex-row bg-gray-100 py-8 px-4 md:px-6">
+   
+    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+      <h2 class="text-lg font-bold mb-4 ml-13">Wedding & Gifting Specials</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <!-- Item 1 -->
+        <div class="flex flex-col items-center text-center">
+          <img src="images/cooker.jfif" class="w-20 h-20 object-cover rounded-md">
+          <p class="text-sm font-semibold mt-2">Smart Watches</p>
+          <span class="text-green-600 text-xs font-medium">Min. 40% Off</span>
+        </div>
+        <!-- Item 2 -->
+        <div class="flex flex-col items-center text-center">
+          <img src="images/SHEIN 4pcs Solid Drawstring Side Tee.jfif" alt="Jewellery" class="w-20 h-20 object-cover rounded-md">
+          <p class="text-sm font-semibold mt-2">Jewellery</p>
+          <span class="text-green-600 text-xs font-medium">Min. 70% Off</span>
+        </div>
+        <!-- Item 3 -->
+        <div class="flex flex-col items-center text-center">
+          <img src="images/61bac94a-0618-4416-9739-33a6b2e85475.jfif" alt="Topwear" class="w-20 h-20 object-cover rounded-md">
+          <p class="text-sm font-semibold mt-2">Topwear</p>
+          <span class="text-green-600 text-xs font-medium">Min. 50% Off</span>
+        </div>
+        <!-- Item 4 -->
+        <div class="flex flex-col items-center text-center">
+          <img src="images/“Unearthing Affordable Luxury_ High-Quality Earbuds That Won’t Break the Bank”.jfif" alt="Lips" class="w-20 h-20 object-cover rounded-md">
+          <p class="text-sm font-semibold mt-2">Air pods</p>
+          <span class="text-red-600 text-xs font-medium">Special Offer</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="w-full md:w-3/4 md:ml-6 bg-white rounded-md shadow-md">
+      <div class="p-4 md:p-6">
+        <img src="images/feae8246-1503-4a7b-8ec0-b8e0b645c203.jfif" alt="Top Selling Smartphones" class="w-full h-40 md:h-60 object-cover rounded-md">
+        <div class="mt-4 text-center">
+          <h1 class="text-xl md:text-2xl font-bold">Top Selling Smartphones</h1>
+          <p class="text-gray-500 mt-2">Latest Technology, Best Brands</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded-md mt-4 hover:bg-blue-700">
+            Explore Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  -->
+<section class="bg-gray-100 py-8 px-6">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Category 1 -->
+    <div class="bg-white p-4 rounded-lg shadow">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-bold ml-12">Wedding & Gifting Specials</h2>
+        <button class="text-white bg-blue-600 hover:bg-gray-700 text-lg px-3 py-2 rounded-full cursor-pointer">&#x2192;</button>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/183 Full Touch Screen Smart Watch 100 Sport Modes Ai Control Games  Ideal for Android  IOS Phones - Full Metal Silvery.jfif" alt="Smart Watches" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Smart Watches</p>
+          <span class="text-green-600 text-xs font-medium">Min. 40% Off</span>
+        </div>
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/7adf0194-4d48-410f-a6fa-bb28a7d3def1.jfif" alt="Topwear" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Topwear</p>
+          <span class="text-green-600 text-xs font-medium">Min. 50% Off</span>
+        </div>
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/“Unearthing Affordable Luxury_ High-Quality Earbuds That Won’t Break the Bank”.jfif" alt="Jewellery" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Jewellery</p>
+          <span class="text-green-600 text-xs font-medium">Min. 70% Off</span>
+        </div>
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/.jfif" alt="Lips" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">laptops</p>
+          <span class="text-red-600 text-xs font-medium">Special Offer</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="bg-white p-4 rounded-lg shadow">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-bold ml-12">Home Decor & Furnishings</h2>
+        <button class="text-white bg-blue-600 hover:bg-gray-700 text-lg px-3 py-2 rounded-full cursor-pointer">&#x2192;</button>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/Double Wall Business Matte Black Flask Thermos Leather Insulated Drinking Water Thermos - Buy Matte Black Flask Thermos,Leather Insulated Drinking Water Thermos,Double Wall Stainless Steel Thermos Bottle Product o.jfif" alt="Cups & Saucers" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Cups & Saucers</p>
+          <span class="text-green-600 text-xs font-medium">New Collection</span>
+        </div>
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/Allysia Soft Fluffy Area Carpet Rugs Anti-Skid Plush Shaggy Soft Touch Rugs For Living Room Rug Carpets For Children Bedroom Home Decor Kids Room 120_.jfif" alt="Carpet Rugs" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Carpet Rugs</p>
+          <span class="text-green-600 text-xs font-medium">Min. 50% Off</span>
+        </div>
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/Shelves & Bookcases _ 5 Tier Rustic Standing Tree Bookshelf _ Living and Home.jfif" alt="Bookshelves" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Bookshelves</p>
+          <span class="text-green-600 text-xs font-medium">Min. 50% Off</span>
+        </div>
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/4 Times You Should Never Ever Drink Coffee.jfif" alt="Artificial Flowers" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Artificial Flowers</p>
+          <span class="text-green-600 text-xs font-medium">Min. 50% Off</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 3 -->
+    <div class="bg-white p-4 rounded-lg shadow">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-bold ml-20">Make Your Home Stylish</h2>
+        <button class="bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-3 rounded-full cursor-pointer transition">
+          &#x2192;
+      </button>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/LunchBots Large Trio Stainless Steel Lunch Container -Three Section Design for Sandwich and Two Sides - Metal Bento Lunch Box - Eco-Friendly - Stainless Lid - Staineless Steel.jfif" alt="Lunch Boxes" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Lunch Boxes</p>
+          <span class="text-green-600 text-xs font-medium">Grab Or Gone</span>
+        </div>
+        <!--  -->
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/cooker.jfif" class="w-24 h-24 object-cover mx-auto rounded-md">
+
+          <p class="text-sm font-semibold">Pressure Cookers</p>
+          <span class="text-green-600 text-xs font-medium">Special Offer</span>
+        </div>
+        <!--  -->
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/A generation of modern Nordic carpet living room bedroom model room carpet Crystal velvet printed carpet mat M008-200_300CM.jfif" alt="Collapsible Wardrobes" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Collapsible Wardrobes</p>
+          <span class="text-green-600 text-xs font-medium">Min. 50% Off</span>
+        </div>
+        <div class="text-center border border-gray-300 w-38 py-3 shadow">
+          <img src="images/Double Wall Business Matte Black Flask Thermos Leather Insulated Drinking Water Thermos - Buy Matte Black Flask Thermos,Leather Insulated Drinking Water Thermos,Double Wall Stainless Steel Thermos Bottle Product o.jfif" alt="Water Bottles & Flasks" class="w-24 h-24 object-cover mx-auto rounded-md">
+          <p class="text-sm font-semibold">Water Bottles & Flasks</p>
+          <span class="text-green-600 text-xs font-medium">Special Offer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  -->
+<footer class="bg-[#353536] text-white py-10 text-sm">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    <div>
+      <h3 class="font-semibold mb-3">ABOUT</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Contact Us</a></li>
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Flipkart Stories</a></li>
+        <li><a href="#" class="hover:underline">Press</a></li>
+        <li><a href="#" class="hover:underline">Corporate Information</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-3">GROUP COMPANIES</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Myntra</a></li>
+        <li><a href="#" class="hover:underline">Cleartrip</a></li>
+        <li><a href="#" class="hover:underline">Shopsy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-3">HELP</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Payments</a></li>
+        <li><a href="#" class="hover:underline">Shipping</a></li>
+        <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+        <li><a href="#" class="hover:underline">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-3">CONSUMER POLICY</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+        <li><a href="#" class="hover:underline">Terms Of Use</a></li>
+        <li><a href="#" class="hover:underline">Security</a></li>
+        <li><a href="#" class="hover:underline">Privacy</a></li>
+        <li><a href="#" class="hover:underline">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="col-span-2 md:col-span-1">
+      <h3 class="font-semibold mb-3">Mail Us:</h3>
+      <p>Flipkart Internet Private Limited,<br> Buildings Alyssa, Begonia &<br> Clove Embassy Tech Village,<br> Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103, Karnataka, India <br> Telephone: <span class="text-blue-500 font-semibold"> +252619078926</span>
+      </p>
+    </div>
+  </div>
+  <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 flex flex-col md:flex-row justify-center md:justify-between max-w-7xl mx-auto px-6">
+    <div class="space-x-6">
+      <a href="#" class="hover:underline">Become a Seller</a>
+      <a href="#" class="hover:underline">Advertise</a>
+      <a href="#" class="hover:underline">Gift Cards</a>
+      <a href="#" class="hover:underline">Help Center</a>
+    </div>
+    <p class="mt-4 md:mt-0">&copy; 2007-2025 Flipkart.com</p>
+  </div>
+</footer>
+<!--  -->
+    <script>
+      // JavaScript for toggling the mobile menu
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+    
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+     
+    </script>
+  </body>
+</html>
